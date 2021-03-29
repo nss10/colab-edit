@@ -4,6 +4,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+    <div class='action-boxes'>
+        <textarea id='local-actions' rows='10' cols='50' placeholder="Local Actions"></textarea>
+        <textarea id='incoming-actions' rows='10' cols='50' placeholder="Incoming Actions"></textarea>
+        <button class='btn-merge' id='btn-merge' onclick='merge()'>Merge</button>    
+    </div>
+    </div>
     <button class='btn-add' id='btn-add-default' onclick='addRow(-1)'>Insert Beginning</button>
         <div id="bulletList">
         </div>
