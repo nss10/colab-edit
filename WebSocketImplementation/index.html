@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/CE_WebSocket.js"></script>
+    <script src="js/CE_EventListners.js"></script>
+    <script src="js/CE_Data_Cleaners.js"></script>
+    <script src="js/CE_Constants.js"></script>
+    <script>
+        start_websocket();
+    </script>
+</head>
+<body>
+    <div id="chat"></div>
+    <input id="name" type="text" placeholder="name" />
+    <input id="message" type="text" placeholder="message" />
+    <button id="send" onclick="sendEventListener()">Send</button>
+</body>
+</html>
