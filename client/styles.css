@@ -4,7 +4,12 @@
     background: lavender;
     max-width: 80%;
 }
-
+.site-id{
+    margin: 5px;
+}
+.action-boxes{
+    margin: 10px;
+}
 .txt-item {
     display:inline-flex;
     width:80%;
