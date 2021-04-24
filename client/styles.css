@@ -4,12 +4,20 @@
     background: lavender;
     max-width: 80%;
 }
+
+.site-id-container{
+    display: none;
+}
 .site-id{
     margin: 5px;
 }
+.isOnline {
+    display: none;
+}
+
 .action-boxes{
     margin: 10px;
-    display: none;
+    display: block;
 }
 .txt-item {
     display:inline-flex;
