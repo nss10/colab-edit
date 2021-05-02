@@ -20,7 +20,7 @@ connection.onmessage = event => {
   }
   else{
     document.querySelector('#incoming-actions').value += response.command;
-    document.querySelector('#incoming-actions').value += "\n";
-    // merge();
+    // document.querySelector('#incoming-actions').value += "\n";
+    merge();
   }
 };
