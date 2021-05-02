@@ -46,7 +46,10 @@ function delRow(rowId){
     actionText = "Delete ( "+rowId+ " )";
     localActionList.push({"action" : "Delete", "index" : rowId});
     tbLocal.value += actionText + "\n";
-    console.log(actionText);
+    connection.send(JSON.stringify({
+        "siteId" : document.querySelector('#siteId').value,
+        "command" : actionText
+      }));
 }
 
 function merge(){
