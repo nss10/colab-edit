@@ -32,7 +32,10 @@ function addRow(rowId){
         actionText = "Add ( "+rowId+ " , "+text+" ) ";
         localActionList.push({"action" : "Add", "index" : rowId, "text" : text});
         tbLocal.value += actionText + "\n";
-        console.log(actionText);
+        connection.send(JSON.stringify({
+            "siteId" : document.querySelector('#siteId').value,
+            "command" : actionText
+          }));
         
     }
 }

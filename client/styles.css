@@ -6,7 +6,7 @@
 }
 
 .site-id-container{
-    display: none;
+    display: block;
 }
 .site-id{
     margin: 5px;
