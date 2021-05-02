@@ -1,7 +1,11 @@
 const connection = new WebSocket('ws://localhost:8080');
-
+isOnlineIndicator = document.getElementById('chkbx-online')
+let isOnline=false;
 connection.onopen = () => {
   console.log('connected');
+  isOnlineIndicator.checked=true;
+  isOnline=true;  
+  networkStatusChange();
 };
 
 connection.onclose = () => {
@@ -10,6 +14,8 @@ connection.onclose = () => {
 
 connection.onerror = error => {
   console.error('failed to connect', error);
+  alert("Couldn't connect to server");
+  document.querySelector('#siteId').value=-1;
 };
 
 connection.onmessage = event => {
@@ -20,7 +26,9 @@ connection.onmessage = event => {
   }
   else{
     document.querySelector('#incoming-actions').value += response.command;
-    // document.querySelector('#incoming-actions').value += "\n";
-    merge();
+    document.querySelector('#incoming-actions').value += "\n";
+    if(isOnline){
+      merge();
+    }
   }
 };

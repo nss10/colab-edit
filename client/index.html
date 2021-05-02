@@ -5,8 +5,17 @@
     </head>
     <body>
     <div class='isOnline'>
-        <img src="https://openclipart.org/image/800px/19577" height="10px">
-        <label> Offline </label>
+       <div class='online-container'>
+        <img src="https://i.stack.imgur.com/su1tM.png" height="10px">
+        <label> Online </label>
+       </div>
+       <div class="offline-container">
+           <img src="https://openclipart.org/image/800px/19577" height="10px">
+           <label> Offline </label>
+        </div>
+        <br/>
+        <label for="chkbx-online" id='lbl-online'> Is Online? </label>
+        <input id='chkbx-online' type='checkbox' value='false'>
     </div>  
     <div class='site-id-container'>
     <label for="siteId"> Site Identifier </label>

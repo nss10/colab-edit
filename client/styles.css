@@ -12,9 +12,14 @@
     margin: 5px;
 }
 .isOnline {
+    display: block;
+}
+.online-container{
     display: none;
 }
-
+.offline-container{
+    display: block;
+}
 .action-boxes{
     margin: 10px;
     display: none;
